@@ -1,0 +1,287 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#titulo1{
+    color: rgb(175, 56, 56);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+   
+footer{
+    display: flex;
+    background-color: black;
+   
+}
+
+#ubi{
+    color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+    
+
+#nav{
+    display: flex;
+    background-color: black;
+    border: 5px solid black;
+    margin-top: 10px;
+    list-style-type: none;
+    text-decoration: none;
+   
+    
+}
+li{
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    display: grid;
+    background-color: rgb(170, 18, 18);
+   
+                        
+}
+#txt1{
+    background-color: rgb(209, 131, 41);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border: 3px solid rgb(218, 218, 76);
+
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+    #nav{
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+  
+    main{
+ 
+    height: 2500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 25% 25% 25%;
+    grid-template-areas:"txt"
+                        "foto1"
+                        "foto2"
+                        "foto3";
+    justify-items: center;
+    align-items: center;
+    
+    
+    }
+    
+                        
+    #txt1{
+        grid-area:txt;
+    }
+    #img1{
+        grid-area:foto1;
+        border: 3px solid yellow
+    }                  
+    #img2{
+        grid-area:foto2;
+        border: 3px solid yellow
+    }  
+    #img3{
+        grid-area: foto3;
+        border: 3px solid yellow
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 
+}
+@media only screen and (min-width: 600px) {
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+       
+    main{
+            height: 1400px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  15% 35% 50%;
+            grid-template-areas:"txt txt"
+                                "foto1 foto2"
+                                "foto3 foto3";
+            align-items: center;
+          
+          
+           }
+            #txt{
+                grid-area:txt;
+            }
+            #img1{
+                grid-area:foto1;
+                border: 3px solid yellow
+            }                  
+            #img2{
+                grid-area:foto2;
+                border: 3px solid yellow
+            }  
+            #img3{
+                grid-area: foto3;
+                border: 3px solid yellow
+                
+            }
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+}
+@media only screen and (min-width: 768px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+   
+
+        main{
+            height: 1500px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  15% 40% 45%;
+            grid-template-areas:"txt txt"
+                                "foto1 foto2"
+                                "foto3 foto3";
+
+            align-items: center;
+            justify-content: center;
+          
+          
+           }
+            #txt{
+                grid-area:txt;
+            
+            }
+            #img1{
+                grid-area:foto1;
+                border: 3px solid yellow
+               
+            }                  
+            #img2{
+                grid-area:foto2;
+                border: 3px solid yellow
+                
+            }  
+            #img3{
+                grid-area: foto3;
+                width: 70%;
+                justify-self: center;
+                border: 3px solid yellow
+            }
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+
+
+}
+
+@media only screen and (min-width: 992px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+     
+        main{
+            height: 1800px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows:  8% 45% 45%;
+            grid-template-areas:"txt txt txt"
+                                "foto1 foto2"
+                                "foto3 foto3";
+            align-items: center;
+            justify-content: center;
+           
+            }
+
+            #txt{
+                grid-area:txt;
+            }
+            #img1{
+                grid-area:foto1;
+                border: 3px solid yellow
+            }                  
+            #img2{
+                grid-area:foto2;
+                border: 3px solid yellow
+            }  
+            #img3{
+                grid-area: foto3;
+                border: 3px solid yellow
+                width: 50%;
+            }
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+}
+
+@media only screen and (min-width: 1200px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+     
+        main{
+            height: 2500px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows:  9% 45% 45%;
+            grid-template-areas:"txt txt txt"
+                                "foto1 foto2"
+                                "foto3 foto3";
+            align-items: center;
+           
+            }
+
+            #txt{
+                grid-area:txt;
+                width: 80%;
+                justify-self: center;
+            }
+            #img1{
+                grid-area:foto1;
+                border: 3px solid yellow
+            }                  
+            #img2{
+                grid-area:foto2;
+                border: 3px solid yellow
+            }  
+            #img3{
+                grid-area: foto3;
+                border: 3px solid yellow
+                width: 50%;
+            }
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+}

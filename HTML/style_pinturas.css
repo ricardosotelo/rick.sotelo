@@ -1,0 +1,197 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#tituloUno{
+    color: rgb(175, 56, 56);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#tituloDos{
+            text-align: center;
+            background-color: rgb(204, 146, 70);           
+            grid-area: titulo;
+            justify-content: center;
+           
+
+}
+
+#tituloTres{
+    background-color: rgb(51, 51, 179);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    grid-area: tituloUno;
+}
+#tituloCuatro{
+    background-color: rgb(51, 51, 179);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    grid-area: tituloDos;
+
+}
+#tituloCinco{
+    background-color: rgb(51, 51, 179);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    grid-area: tituloTres;
+
+}
+main{
+    background-color: rgb(170, 18, 18);
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 7% 25% 5% 25% 5% 25% 5%;
+    grid-template-areas: "titulo" 
+                         "foto1"
+                         "tituloUno"
+                         "foto2"
+                         "tituloDos"
+                         "foto3"
+                         "tituloTres"; 
+justify-content: center;
+}
+#foto1{
+    grid-area: foto1;
+}
+#foto2{
+    grid-area: foto2;
+}
+#foto3{
+    grid-area: foto3;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+   
+}
+
+#ubi{
+    color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+    
+
+#nav{
+    display: flex;
+    background-color: black;
+    border: 5px solid black;
+    margin-top: 10px;
+    list-style-type: none;
+    text-decoration: none;
+   
+    
+}
+li{
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+    #nav{
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+ 
+
+    #tituloDos{
+        font-size: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 
+}
+@media only screen and (min-width: 600px) {
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+
+        #tituloDos{
+            font-size: 40px;
+        }
+
+    footer{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        
+            }
+}
+@media only screen and (min-width: 768px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+        
+        #tituloDos{
+            font-size: 50px;
+        }
+
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+
+
+}
+
+@media only screen and (min-width: 992px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+        #tituloDos{
+            font-size: 60px;
+        }
+    footer{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        
+          }
+}
+
+@media only screen and (min-width: 1200px){
+    #nav{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+     
+ 
+        
+
+      
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+            }
+}
