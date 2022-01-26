@@ -41,18 +41,18 @@ li{
 
 
 main{ 
+
     background-color: rgb(170, 18, 18);
 
-    
+}
+
 
 
 @media only screen and (max-width:600px){
 
- 
 
-    #tituloDos{
-        font-size: 30px;
-    }
+
+
 
     footer{
         flex-direction: column;
@@ -62,11 +62,10 @@ main{
  
 }
 @media only screen and (min-width: 600px){
-   
+    
 
-        #tituloDos{
-            font-size: 40px;
-        }
+
+     
 
     footer{
            flex-direction: column;
@@ -76,11 +75,9 @@ main{
             }
 }
 @media only screen and (min-width: 768px){
+      
 
         
-        #tituloDos{
-            font-size: 50px;
-        }
 
             footer{
                 flex-direction: column;
@@ -94,9 +91,10 @@ main{
 
 @media only screen and (min-width: 992px){
  
-        #tituloDos{
-            font-size: 60px;
-        }
+
+ 
+ 
+    }
     footer{
            flex-direction: column;
            justify-content: center;
@@ -106,6 +104,8 @@ main{
 }
 
 @media only screen and (min-width: 1200px){
+
+   
 
             footer{
                 flex-direction: column;
